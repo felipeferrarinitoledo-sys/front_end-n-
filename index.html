@@ -3,23 +3,22 @@
       <head>
           <title>FrontEnd</title>
           <meta charset="utf-8">
-          <link rel="stylesheete" type="text/css" href="">
+          <link rel="stylesheet" type="text/css" href="">
           <script></script>
-         </head>
-         <style>
-           .body{
-             background-color: rgb(126, 127, 133);
-             color: rgb(0, 0, 0);
-           }
-           .texto{
-            color:rgb(240, 0, 0)
-           }
-
-           
-         </style>
-    
-    
-    <body class="body">
+      </head>
+      <style>
+          .body{
+            background-color: rgb(255, 255, 255);
+            color:rgb(0, 0, 0);
+          }
+          .texto{
+            color:rgb(0, 0, 0);
+          }
+          .submit{
+            background-color: rgb(31, 216, 55);
+          }
+      </style>
+      <body class="body">
           Bom dia, esse é o primeiro codigo de html
         <form method="POST" action="index.php">
             <fieldset>
@@ -27,9 +26,9 @@
                   Primeiro Formulario
                 </legend>
                 <br>
-                <p class="texto">Usuario</p> <input type="text" placeholder="Usuario" minlength="5" maxlength="10" required><br>
-                <p>Senha:</p>  <input type="password" placeholder="Senha" minlength="5" maxlength="10" required><br>
-                <input type="submit" value="Registrar"> class="submit">
+                <p class="texto">Usuario:</p> <input type="text" placeholder="Usuario" minlength="5" maxlength="10" required><br>
+                <p class="texto">Senha:</p>   <input type="password" placeholder="Senha" minlength="5" maxlength="10" required><br>
+                <input type="submit" value="Registrar" class="submit">
             </fieldset>
         </form>
       </body>
