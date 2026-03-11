@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
        body{
-         background-color: grey;
+         background-color: rgb(137, 137, 137);
          width: 1000px;
          height: 500px;
        }
@@ -24,28 +24,25 @@
          background-color: yellow;
          width: 100%;
          height: 10%;
+        
        }
        .menu{
 
-        width: 10% ;
+        width: 100% ;
         height: 100% ;
-        background-color : rgb(255, 0, 43)
+        background-color : rgb(255, 0, 43);
+        display : flex;
        }
 
        .linkMenu {
         color : rgb(0, 0, 0);
         border : 1px solid rgb(0, 0, 0);
-        width: 100%;
+        width: 20%;
         height: 100%;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(213, 235, 11);
         font-family: cursive ;
-        font-size: 200% ;
+        font-size: 150% ;
         font-weight: bold ;
-        margin-left: 22% ;
-
-
-
-
        }
 
 
@@ -54,8 +51,20 @@
 <body>
     <header>
       <div class="menu"> 
-        <a class= "linkMenu" href="https://ge.globo.com/"> HOME </a>
+        <div class= "linkMenu">
+          <a href="https://ge.globo.com/"> Globo Esporte </a>
 
+
+        </div>
+        <div class= "linkMenu">
+          <a href="https://ge.globo.com/"> G1 </a>
+
+
+        </div>
+        <div class= "linkMenu">
+          <a href="https://ge.globo.com/"> globo.com </a>
+
+        
 
       </div>
       
