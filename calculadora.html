@@ -6,65 +6,77 @@
     <title>Document</title>
     <style>
         .campo{
-            background-color: yellow;
-            border:5px solid green;
+            background-color: rgb(255, 255, 255);
+            border:5px solid rgb(0, 0, 0);
         }
         .botao{
             width:5%;
             height:3%;
-            background-color: rgb(139, 94, 137);
-            border:1.5px solid purple;
+            background-color: rgb(255, 255, 255);
+            border:1.5px solid rgb(0, 0, 0);
         }
         .botao2{
             width:5%;
             height:3%;
-            background-color: rgb(37, 158, 107);
-            border:1.5px solid rgb(14, 8, 187);
+            background-color: rgb(255, 255, 255);
+            border:1.5px solid rgb(0, 0, 0);
         }
         .botao3{
             width:5%;
             height:3%;
-            background-color: rgb(178, 26, 117);
-            border:1.5px solid rgb(166, 206, 24);
+            background-color: rgb(255, 255, 255);
+            border:1.5px solid rgb(0, 0, 0);
         }
         .botao4{
             width:5%;
             height:3%;
-            background-color: rgb(178, 77, 26);
-            border:1.5px solid rgb(18, 126, 172);
+            background-color: rgb(255, 255, 255);
+            border:1.5px solid rgb(0, 0, 0);
         }
     </style>
+    <script>
+        function adicionar(valor){
+            document.getElementById("campo").value += valor;
+        }
+        function limpar(){
+            document.getElementById("campo").value = "";
+        }
+
+
+
+
+    </script>
 </head>
 <body>
     <fieldset>
         <legend>CALCULADORA DO 2ºA</legend>
         <input type="text" id="campo" class="campo"><br><br>
-        <button class="botao">1</button>
-        <button class="botao">2</button>
-        <button class="botao">3</button>
-        <button class="botao2">x</button>
-        <button class="botao2">^</button>
+        <button class="botao" onclick="adicionar('1')">1</button>
+        <button class="botao" onclick="adicionar('2')">2</button>
+        <button class="botao" onclick="adicionar('3')">3</button>
+        <button class="botao2" onclick="adicionar('*')">x</button>
+        <button class="botao2" onclick="adicionar('^')">^</button>
         <br>
-        <button class="botao">4</button>
-        <button class="botao">5</button>
-        <button class="botao">6</button>
-        <button class="botao2">/</button>
-        <button class="botao2">(</button>
+        <button class="botao" onclick="adicionar('4')">4</button>
+        <button class="botao" onclick="adicionar('5')">5</button>
+        <button class="botao" onclick="adicionar('6')">6</button>
+        <button class="botao2" onclick="adicionar('/')">/</button>
+        <button class="botao2" onclick="adicionar('')">(</button>
         <br>
-        <button class="botao">7</button>
-        <button class="botao">8</button>
-        <button class="botao">9</button>
-        <button class="botao2">+</button>
+        <button class="botao" onclick="adicionar('7')">7</button>
+        <button class="botao" onclick="adicionar('8')">8</button>
+        <button class="botao" onclick="adicionar('9')">9</button>
+        <button class="botao2" onclick="adicionar('+')">+</button>
         <button class="botao2">)</button>
         <br>
-        <button class="botao2">*</button>
-        <button class="botao">0</button>
-        <button class="botao2">#</button>
-        <button class="botao2">-</button>
-        <button class="botao2">%</button>
+        <button class="botao2"onclick="adicionar('*')">*</button>
+        <button class="botao" onclick="adicionar('0')">0</button>
+        <button class="botao2" onclick="adicionar('#')">#</button>
+        <button class="botao2" onclick="adicionar('-')">-</button>
+        <button class="botao2" onclick="adicionar('%')">%</button>
         <br>
-        <button class="botao3">C</button>
-        <button class="botao4">=</button>
+        <button class="botao3" onclick="limpar(limpar)">C</button>
+        <button class="botao4" onclick="adicionar('=')">=</button>
     </fieldset>
 </body>
 </html>
