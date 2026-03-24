@@ -41,6 +41,19 @@
         function limpar(){
             document.getElementById("campo").value = "";
         }
+        function calcular(){
+            var campo = document.getElementById ("campo");
+            try{
+                campo.value = eval (campo.value);
+
+
+             } catch(error){
+                campo.value = "erro";
+
+
+             }
+
+        }
 
 
 
@@ -75,8 +88,8 @@
         <button class="botao2" onclick="adicionar('-')">-</button>
         <button class="botao2" onclick="adicionar('%')">%</button>
         <br>
-        <button class="botao3" onclick="limpar(limpar)">C</button>
-        <button class="botao4" onclick="adicionar('=')">=</button>
+        <button class="botao3" onclick="limpar()">C</button>
+        <button class="botao4" onclick="calcular()">=</button>
     </fieldset>
 </body>
 </html>
