@@ -1,39 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    h2{
-        
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 200%;
-        font-weight: bold;
-        color: rgb(250, 133, 207);
-    }
-    h4{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 100%;
-        font-weight: bold;
-        color:rgb(234, 195, 236)
-    }
+        body {
+            width: 1500px;
+            height: 700px;
+        }
+
+        header {
+            background: #22C1C3;
+            background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+            width: 100%;
+            height: 10%;
+        }
+
+        h1 {
+            color: rgb(121, 5, 236);
+            font-family: arial;
+            font-size: 100%;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        h5 {
+            color: rgb(0, 0, 0);
+            font-family: arial;
+            font-size: 60%;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        main {
+            background-color: rgb(126, 193, 255);
+            width: 100%;
+            height: 80%;
+        }
+
+        footer {
+            background-color: rgb(90, 90, 82);
+            width: 100%;
+            height: 10%;
+        }
+        .fotoHome{
+            background-image: url("https://www.ohmygoodness.com/reserved/cards/202004100603170.barber.gif");
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            background-size: cover;
+            width: 100px ;
+            height: 90px;
+           
+        }
+        .menu{
+            display:none;
+            position:absolute;
+            background-color: rgb(0, 0, 0);
+            list-style: none;
+            padding: 0;
+        }
+        .dropdown:hover.menu{
+            display:block;
+            position: relative;
+        }
+        .menu_principal
     </style>
 </head>
+
 <body>
     <header>
+        <h1> Pelanca Barber</h1>
+        <h5> Te deixando calvo desde 1001</h5>
+        <ul class="menu_principal">
+            <li>
+               <a href="" > Home </a>
+            </li>
+            <li>
+                <a href="" > Seviços </a>
+                <ul class="dropdown">
+                    <li>Corte Masculino
+                        <ul class="menu">
+                            <li>
+                                Cabelo
+                            </li>
+                            <li>
+                              Barba
+                            </li>
+                            <li>
+                              Sobrancelha
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Corte Feminino</li>
+                       <ul class="menu">
+                        <li>
+                            Cabelo
 
+                        </li>
+                        <li>
+                            Hidratação
+                         
+                            
+                        </li>
+                        <li>
+                            Pintura
+                            
+                        </li>
+                        <li>
+                            Sobrancelha
+                        </li>
+                        
+                    
+                    
+                       </ul>
+                </ul>
+            </li>
+            <li>
+                <a href="" > Contatos </a>
+            </li>
+            <li>
+                <a href="" > Login </a>
+            </li>
+
+        </ul>
     </header>
-    <body>
-      <h2>Contato</h2>
-      <p class="texto">Nome:</p> <input type="text" placeholder="" minlength="150" maxlength="200" required><br>
-      <p class="texto">E-mail:</p> <input type="text" placeholder="" minlength="500" maxlength="500" required><br>
-      <p class="texto">Mensagem:</p> <input type="text" placeholder="" minlength="1000" maxlength="1000" required><br>      
-    </body>
+    <main>
+        <div class="conteudo">
+            <h1> Barbearia Pelanca</h1>
+        </div>
+        <div class="fotoHome"></div>
+    </main>
     <footer>
 
     </footer>
-
-
 </body>
+
 </html>
