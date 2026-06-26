@@ -15,8 +15,8 @@ body{
     height: 100%;
     background-color: white ;
     margin-left: 1.5%;
-    float: left ;
-    display: inline ;
+    float: left;
+    display: inline;
     flex-direction: row;
 }
 .cima, .baixo{
@@ -26,10 +26,19 @@ body{
 .foto{
     width: 80%;
     height: 80%;
+    margin-top: 10%;
 }
 .baixo{
-    margin-top: 90%%
+    margin-top: 90%;
+    font-family: arial;
+    font-size: 100%;
+    font-weight: bold;
+    color: red;
 }
 .cima{
     margin-top: -1%;
+    font-family: arial;
+    font-size: 100%;
+    font-weight: bold;
+    color: red;
 }
